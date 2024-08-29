@@ -5,7 +5,10 @@ import "../styles/Header.css";
 class Header extends Component {
   render() {
     return(
-      <header>This is aaaaaa</header>
+      <header>This is aaaaaa
+        <button className="btn">123</button>
+
+      </header>
     )
   }
 }
