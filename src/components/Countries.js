@@ -4,6 +4,8 @@ import axios from "axios";
 
 
 function Coutries() {
+  const [coutries, setCountries] = useState([]);
+  if(!coutries)
   axios.get("https://restcountries.eu/rest/v2/all").then(res => {
     console.log(res);
   })
