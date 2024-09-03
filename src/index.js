@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import ReduxApp from './components/App-redux';
+import Header from "./components/Header";
 import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 import { func } from 'prop-types';
@@ -27,10 +26,8 @@ function changeStore(state = [], action) {
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ReduxApp />
       <React.Fragment>
         <Main/>
-        
       </React.Fragment>
     </Provider>
   </React.StrictMode>
