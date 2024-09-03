@@ -7,7 +7,6 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 import { func } from 'prop-types';
 
-
 const store = createStore(changeStore);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,7 +18,6 @@ function changeStore(state = [], action) {
         ...state,
         action.payload
       ]
-    break;
     default:
       return state
   }
