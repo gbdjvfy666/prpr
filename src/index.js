@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 import { func } from 'prop-types';
 import Main  from './components/Main.js';
+import Countlike from './components/Count.js';
 
 const store = createStore(changeStore);
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,7 +28,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <React.Fragment>
-        <Main/>
+        <Countlike/>
       </React.Fragment>
     </Provider>
   </React.StrictMode>
